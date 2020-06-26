@@ -42,18 +42,16 @@ def promising(i):
 
 def print_solution():
 
-    total_number = 0
-
     # 출력을 위한 범위 설정
+    # epoch 는 총 경우의 수와 같다
     epoch = len(result_list) // N
 
     # 결과 출력
     for i in range(1, epoch + 1):
         print("{}: {}".format(i, result_list[N * (i - 1): N * i]).replace("'", ""))
-        total_number = i
     # N * N 체스판에서 queen 을 놓을 수 있는 경우의 수
     # for 문의 마지막 i 값이 총 경우의 수이다.
-    print("Total Number:", total_number)
+    print("Total Number:", epoch)
 
 
 if __name__ == "__main__":
