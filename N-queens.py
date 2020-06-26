@@ -34,6 +34,6 @@ queens(0)
 
 epoch = len(result_list) // N + 1
 for i in range(1, epoch):
-    print(i, result_list[N * (i-1): N * i])
+    print("{}: {}".format(i, result_list[N * (i-1): N * i]).replace("'", ""))
 
 print("Total Number: ", i)
