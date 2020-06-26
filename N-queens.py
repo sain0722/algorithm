@@ -26,14 +26,16 @@ def promising(i):
     return switch
 
 
-N = int(input())
-col = [0] * (N+1)
-result_list = []
+if __name__ == "__main__":
+    N = int(input())
+    col = [0] * (N+1)
+    result_list = []
 
-queens(0)
+    queens(0)
 
-epoch = len(result_list) // N + 1
-for i in range(1, epoch):
-    print("{}: {}".format(i, result_list[N * (i-1): N * i]).replace("'", ""))
+    epoch = len(result_list) // N + 1
+    for i in range(1, epoch):
+        print("{}: {}".format(i, result_list[N * (i-1): N * i]).replace("'", ""))
 
-print("Total Number: ", i)
+    print("Total Number: ", i)
+
