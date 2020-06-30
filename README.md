@@ -17,3 +17,7 @@
 - Greedy
   - knapsack
   - 
+
+- 기말고사
+  - Back Tracking
+    - N-Queens
