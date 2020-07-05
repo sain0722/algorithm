@@ -102,7 +102,7 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/pycharm
 
 # venv folder
-venv/
+venv/*
 =======
 # End of https://www.toptal.com/developers/gitignore/api/pycharm
 >>>>>>> db79b2b092f00d09f5f842da735c0cba2bd504b1
